@@ -1,4 +1,6 @@
 import { ActionType } from "../action-types/index";
+import reducers from "../reducers";
+import reducer from "../reducers/bankReducer";
 
 interface DepositAction {
   type: ActionType.DEPOSITO;
@@ -15,3 +17,4 @@ interface ZerarAction {
 }
 
 type Action = DepositAction | SaqueAction | ZerarAction;
+
